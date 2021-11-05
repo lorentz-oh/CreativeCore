@@ -16,6 +16,7 @@ import com.creativemd.creativecore.common.packet.gui.GuiUpdatePacket;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 
 public abstract class SubGui extends GuiParent {
@@ -137,7 +138,7 @@ public abstract class SubGui extends GuiParent {
     // ================DIALOGS================
     
     public void openYesNoDialog(String text) {
-        openButtonDialogDialog(text, "Yes", "No");
+        openButtonDialogDialog(text, I18n.translateToLocal("gui.yes"), I18n.translateToLocal("gui.no"));
     }
     
     public void openButtonDialogDialog(String text, String... buttons) {

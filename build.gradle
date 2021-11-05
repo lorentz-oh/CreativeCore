@@ -16,7 +16,7 @@ apply plugin: 'maven-publish'
 
 version = '1.0'
 group = 'com.creativemd.creativecore' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'creativecore'
+archivesBaseName = 'creativecoreatl'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
